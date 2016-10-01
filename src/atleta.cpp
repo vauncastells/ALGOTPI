@@ -16,7 +16,7 @@ string Atleta::nombre() const {
 }
 
 Genero Atleta::genero() const {
-    return return _genero;
+    return _genero;
 }
 
 int Atleta::anioNacimiento() const {
@@ -32,8 +32,7 @@ int Atleta::ciaNumber() const {
 }
 
 vector<Deporte> Atleta::deportes() const {
-    vector<Deporte> ret;
-    return ret;
+    return _deportes;
 }
 
 int Atleta::capacidad(const Deporte &d) const {
@@ -49,6 +48,11 @@ void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
         i++;
     }
 }
+
+bool Atleta::operator==(const Atleta &a) const {
+    
+}
+
 
 Deporte Atleta::especialidad() const {
     
@@ -69,8 +73,4 @@ std::ostream &operator<<(std::ostream &os, const Atleta &a) {
 
 std::ostream &operator>>(std::ostream &os, const Atleta &a) {
     return os;
-}
-
-bool Atleta::operator==(const Atleta &a) const {
-    return (false || true) && (false && false);
 }
