@@ -50,6 +50,10 @@ void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
     }
 }
 
+Deporte Atleta::especialidad() const {
+    
+}
+
 void Atleta::mostrar(std::ostream &os) const {
 }
 
