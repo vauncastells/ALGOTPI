@@ -39,6 +39,8 @@ public:
 
     bool operator==(const Competencia &c) const;
 
+    Competencia operator=(const Competencia &c);
+
     //Entrada y salida
     void mostrar(std::ostream &os) const;
 
@@ -49,6 +51,6 @@ public:
 
 std::ostream &operator<<(std::ostream &os, const Competencia &c);
 
-std::ostream &operator>>(std::ostream &os, const Competencia &c);
+std::istream &operator>>(std::istream &is, const Competencia &c);
 
 #endif /*__COMPETENCIA__*/

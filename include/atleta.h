@@ -32,9 +32,13 @@ public:
 
     int capacidad(const Deporte &d) const;
 
+    Deporte especialidad() const;
+
     void entrenarNuevoDeporte(const Deporte &d, const int &c);
 
     bool operator==(const Atleta &a) const;
+
+    Atleta operator=(const Atleta &a);
 
     //Entrada y salida
     void mostrar(std::ostream &os) const;
@@ -46,6 +50,6 @@ public:
 
 std::ostream &operator<<(std::ostream &os, const Atleta &a);
 
-std::ostream &operator>>(std::ostream &os, const Atleta &a);
+std::istream &operator>>(std::istream &is, const Atleta &a);
 
 #endif /*__ATLETA__*/
