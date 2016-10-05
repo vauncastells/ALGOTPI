@@ -8,7 +8,8 @@ Atleta::Atleta(const string &n, const Genero &g, const int &a, const Pais &p, co
     p = _nacionalidad;
     c = _ciaNumber;
     vector<Deporte> d;
-    d == 0;
+    d = ["tenis"]; la lista que contiene al deporte tenis, falta implementar
+    d._capacidad = 50; no se como decir que es de tenis :/
 }
 
 string Atleta::nombre() const {
@@ -36,7 +37,7 @@ vector<Deporte> Atleta::deportes() const {
 }
 
 int Atleta::capacidad(const Deporte &d) const {
-    return _capacidad = d._capacidad;;
+    return d._capacidad;
 }
 
 Deporte Atleta::especialidad() const {
