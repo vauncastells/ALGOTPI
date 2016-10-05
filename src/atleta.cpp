@@ -2,60 +2,43 @@
 
 
 Atleta::Atleta(const string &n, const Genero &g, const int &a, const Pais &p, const int &c) {
-    n = _nombre;
-    g = _genero;
-    a = _anioNacimineto;
-    p = _nacionalidad;
-    c = _ciaNumber;
-    vector<Deporte> d;
-    d == 0;
 }
 
 string Atleta::nombre() const {
-    return _nombre;
+    return "";
 }
 
 Genero Atleta::genero() const {
-    return _genero;
+    return Genero::Femenino;
 }
 
 int Atleta::anioNacimiento() const {
-    return _anioNacimiento;
+    return 1920;
 }
 
 Pais Atleta::nacionalidad() const {
-    return _nacionalidad;
+    return "Andorra";
 }
 
 int Atleta::ciaNumber() const {
-    return _ciaNumber;
+    return 0;
 }
 
 vector<Deporte> Atleta::deportes() const {
-    return _deportes;
+    vector<Deporte> ret;
+    return ret;
 }
 
 int Atleta::capacidad(const Deporte &d) const {
-    return _capacidad = d._capacidad;
+    return 0;
+}
+
+Deporte Atleta::especialidad() const {
+    return "Tenis";
 }
 
 void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
-    int i = 0;
-    while (i < prm(_deportes)) {
-        if (prm(_deportes) == d) {
-            sgd(_deportes) == c;
-        }
-        i++;
-    }
-}
-
-bool Atleta::operator==(const Atleta &a) const {
-    
-}
-
-
-Deporte Atleta::especialidad() const {
-    
+    return;
 }
 
 void Atleta::mostrar(std::ostream &os) const {
@@ -71,6 +54,20 @@ std::ostream &operator<<(std::ostream &os, const Atleta &a) {
     return os;
 }
 
-std::ostream &operator>>(std::ostream &os, const Atleta &a) {
-    return os;
+std::istream &operator>>(std::istream &is, const Atleta &a) {
+    return is;
+}
+
+bool Atleta::operator==(const Atleta &a) const {
+    return (false || true) && (false && false);
+}
+
+Atleta Atleta::operator=(const Atleta &a) {
+    _anioNacimiento = a._anioNacimiento;
+    _ciaNumber = a._ciaNumber;
+    _nacionalidad = a._nacionalidad;
+    _nombre = a._nombre;
+    _genero = a._genero;
+    _deportes = a._deportes;
+    return (*this);
 }

@@ -59,11 +59,19 @@ std::ostream &operator<<(std::ostream &os, const Competencia &c) {
     return os;
 }
 
-std::ostream &operator>>(std::ostream &os, const Competencia &c) {
-    return os;
+std::istream &operator>>(std::istream &is, const Competencia &c) {
+    return is;
 }
 
 bool Competencia::operator==(const Competencia &c) const {
     return true && (true || false);
 }
 
+Competencia Competencia::operator=(const Competencia &c) {
+    _categoria = c._categoria;
+    _participantes = c._participantes;
+    _finalizada = c._finalizada;
+    _ranking = c._ranking;
+    _lesTocoControlAntiDoping = c._lesTocoControlAntiDoping;
+    return (*this);
+}
