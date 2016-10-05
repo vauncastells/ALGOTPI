@@ -2,35 +2,41 @@
 
 
 Atleta::Atleta(const string &n, const Genero &g, const int &a, const Pais &p, const int &c) {
+    n = _nombre;
+    g = _genero;
+    a = _anioNacimineto;
+    p = _nacionalidad;
+    c = _ciaNumber;
+    vector<Deporte> d;
+    d == 0;
 }
 
 string Atleta::nombre() const {
-    return "";
+    return _nombre;
 }
 
 Genero Atleta::genero() const {
-    return Genero::Femenino;
+    return _genero;
 }
 
 int Atleta::anioNacimiento() const {
-    return 1920;
+    return _anioNacimiento;
 }
 
 Pais Atleta::nacionalidad() const {
-    return "Andorra";
+    return _nacionalidad;
 }
 
 int Atleta::ciaNumber() const {
-    return 0;
+    return _ciaNumber;
 }
 
 vector<Deporte> Atleta::deportes() const {
-    vector<Deporte> ret;
-    return ret;
+    return _deportes;
 }
 
 int Atleta::capacidad(const Deporte &d) const {
-    return 0;
+    return _capacidad = d._capacidad;;
 }
 
 Deporte Atleta::especialidad() const {
@@ -38,7 +44,13 @@ Deporte Atleta::especialidad() const {
 }
 
 void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
-    return;
+    int i = 0;
+    while (i < prm(_deportes)) {
+        if (prm(_deportes) == d) {
+            sgd(_deportes) == c;
+        }
+        i++;
+    }
 }
 
 void Atleta::mostrar(std::ostream &os) const {
