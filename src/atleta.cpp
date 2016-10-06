@@ -45,14 +45,17 @@ Deporte Atleta::especialidad() const {
 }
 
 void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
-    int i = 0;
-    while (i < prm(_deportes)) {
-        if (prm(_deportes) == d) {
-            sgd(_deportes) == c;
+     int i = 0;
+    pair <Deporte, Int> D;
+    while (i < D) {
+        if (D.first = d) {
+            D.second = c;
         }
         i++;
     }
+    retunrn _capacidad = c;
 }
+
 
 void Atleta::mostrar(std::ostream &os) const {
 }
