@@ -2,6 +2,11 @@
 
 
 Competencia::Competencia(const Deporte &d, const Genero &g, const vector<Atleta> &as) {
+     pair <deporte, Genero> Categoria;
+    Categoria.first = d;
+    Categoria.second = g;
+    bool _finalizada = false;
+    _participantes = as._participantes;
 }
 
 Categoria Competencia::categoria() const {
