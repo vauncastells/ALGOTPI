@@ -18,7 +18,7 @@ vector<Atleta> Competencia::participantes() const {
 }
 
 bool Competencia::finalizada() const {
-    return false;
+    return _finalizada;
 }
 
 vector<Atleta> Competencia::ranking() const {
@@ -27,12 +27,12 @@ vector<Atleta> Competencia::ranking() const {
 
 vector<Atleta> Competencia::lesTocoControlAntiDoping() const {
     vector<Atleta> ret;
-
     return ret;
 }
 
 bool Competencia::leDioPositivo(const Atleta &a) const {
-    return false;
+    _leDioPositivo = a._leDioPositivo;
+    return _leDioPositivo;
 }
 
 void Competencia::finalizar(const vector<int> &posiciones, const vector<pair<int, bool> > &control) {
