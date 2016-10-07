@@ -36,11 +36,11 @@ bool Competencia::leDioPositivo(const Atleta &a) const {
 }
 
 void Competencia::finalizar(const vector<int> &posiciones, const vector<pair<int, bool> > &control) {
-    return;
+    
 }
 
 void Competencia::linfordChristie(const int &n) {
-    return;
+    
 }
 
 bool Competencia::gananLosMasCapaces() const {
@@ -48,7 +48,7 @@ bool Competencia::gananLosMasCapaces() const {
 }
 
 void Competencia::sancionarTramposos() {
-    return;
+    
 }
 
 void Competencia::mostrar(std::ostream &os) const {
