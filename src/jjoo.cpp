@@ -4,27 +4,27 @@
 #include <algorithm>
 
 
-JJOO::JJOO(const int &a, const vector<Atleta> &as, const vector<vector<Competencia> > &cs) {
+JJOO::JJOO(const int &a, const vector<Atleta> &as, const vector<vector<Competencia>> &cs) {
 }
 
 int JJOO::anio() const {
-    return 1920;
+    return _anio;
 }
 
 vector<Atleta> JJOO::atletas() const {
-    return vector<Atleta>();
+    return _atletas;
 }
 
 int JJOO::cantDias() const {
-    return 0;
+    return length._cronograma;
 }
 
 int JJOO::jornadaActual() const {
-    return 0;
+    return _jornadaActual;
 }
 
 vector<Competencia> JJOO::cronograma(const int &d) const {
-    return vector<Competencia>();
+    return ;
 }
 
 vector<Competencia> JJOO::competencias() const {
