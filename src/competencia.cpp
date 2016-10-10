@@ -36,11 +36,18 @@ bool Competencia::leDioPositivo(const Atleta &a) const {
 }
 
 void Competencia::finalizar(const vector<int> &posiciones, const vector<pair<int, bool> > &control) {
-    
+  
 }
 
 void Competencia::linfordChristie(const int &n) {
-    
+    int i = 0;
+    bool _finalzada = false;
+    while (i < _participantes) {
+        if (_participantes[i] != n) {
+            _finalzada = false;
+        }
+        i++;
+    }
 }
 
 bool Competencia::gananLosMasCapaces() const {
@@ -48,6 +55,12 @@ bool Competencia::gananLosMasCapaces() const {
 }
 
 void Competencia::sancionarTramposos() {
+    int i = 0;
+    bool _leDioPositivo = false;
+    while (i < _lesTocoControlAntiDoping) {
+        _leDioPositivo = true;
+        i++;
+    }
     
 }
 
