@@ -3,18 +3,18 @@
 
 Competencia::Competencia(const Deporte &d, const Genero &g, const vector<Atleta> &as) {
     pair <Deporte, Genero> Categoria;
-    Categoria.first = d;
-    Categoria.second = g;
-    bool _finalizada = false;
-    _participantes = as._participantes;
+    _categoria.first = d;
+    _categoria.second = g;
+    _finalizada = false;
+    _participantes = as;
 }
 
 Categoria Competencia::categoria() const {
-    return pair<Deporte, Genero>();
+    return _categoria;
 }
 
 vector<Atleta> Competencia::participantes() const {
-    return vector<Atleta>();
+    return _participantes;
 }
 
 bool Competencia::finalizada() const {
@@ -22,52 +22,75 @@ bool Competencia::finalizada() const {
 }
 
 vector<Atleta> Competencia::ranking() const {
-    return vector<Atleta>();
+    return _ranking;
 }
 
 vector<Atleta> Competencia::lesTocoControlAntiDoping() const {
-    vector<Atleta> ret;
-    return ret;
+    vector<Atleta> res;
+	int i = 0;
+	while (i < lenght._lesTocoControlAntiDoping){
+		add.res (firs.pair<_lesTocoControlAntiDoping<i>>)
+		i++	
+	return res;
 }
 
 bool Competencia::leDioPositivo(const Atleta &a) const {
     _leDioPositivo = a._leDioPositivo;
     return _leDioPositivo;
+    
+    bool res;
+    int i = 0;
+    while (i < lenght._lesTocoControlAntiDoping){
+		if (firs.pair<_lesTocoControlAntiDoping<i>> == a){
+			res = second.pair<_lesTocoControlAntiDoping<i>>;
+		}
+		i++;
+	}
+    return res;
 }
 
 void Competencia::finalizar(const vector<int> &posiciones, const vector<pair<int, bool> > &control) {
-    int i = 0;
-    bool _leDioPositivo;
-    while (i < control) {
-        control.second =_leDioPositivo;
-    }
-    i++;
-  
+	_finalizada = true;
+	_ranking = _posiciones;
+	-lesTocoControlAntiDoping = control;
+    return;
 }
 
 void Competencia::linfordChristie(const int &n) {
-    int i = 0;
-    bool _finalzada = false;
-    while (i < _participantes) {
-        if (_participantes[i] != n) {
-            _finalzada = false;
+    vector<Atleta> res;
+	int i = 0;
+	while (i < length._participantes) {
+		if (_cianumbers(_participantes<i>) != n){
+            add.res(_participantes<i>);
         }
         i++;
     }
+    return res;
 }
 
 bool Competencia::gananLosMasCapaces() const {
-    return true;
+    int i = 0;
+    vector<Atleta> res;
+    while (i < length._ranking -1) {
+		if (_capacidad(_ranking<i>, first.pair<_categoria>) > (_capacidad(_ranking<i+1>, first.pair<_categoria>))){
+			add.res(_ranking<i>);
+		}
+		i++;
+	}
+    return length.res == length._ranking-1;
 }
 
 void Competencia::sancionarTramposos() {
-    int i = 0;
-    bool _leDioPositivo = false;
-    while (i < _lesTocoControlAntiDoping) {
-        _leDioPositivo = true;
-        i++;
-    }
-    
+	int i = 0;
+	vector<Atleta> res;
+	while (i < length._ranking) {
+		if ((pertenece(lesTocoControlAntiDoping(), _ranking<i>)) == false || leDioPositivo(_ranking<i>) == false){
+			add.res(_ranking.vector<i>);
+		}
+		i++;
+	}
+	_ranking = res;
+    return;
 }
 
 void Competencia::mostrar(std::ostream &os) const {
