@@ -36,6 +36,12 @@ bool Competencia::leDioPositivo(const Atleta &a) const {
 }
 
 void Competencia::finalizar(const vector<int> &posiciones, const vector<pair<int, bool> > &control) {
+    int i = 0;
+    bool _leDioPositivo;
+    while (i < control) {
+        control.second =_leDioPositivo;
+    }
+    i++;
   
 }
 
