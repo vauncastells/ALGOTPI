@@ -56,3 +56,15 @@ std::ostream &operator<<(std::ostream &os, const Competencia &c);
 std::istream &operator>>(std::istream &is, const Competencia &c);
 
 #endif /*__COMPETENCIA__*/
+
+bool pertenece(vector<T> ls, T x){
+	int i = 0;
+	bool res = false
+	while (i<lenght.ls) {
+		if (ls<i> == x){
+			res = true;
+		}
+		i++;
+	}		
+	return res;
+}
