@@ -41,13 +41,21 @@ int Atleta::capacidad(const Deporte &d) const {
 }
 
 Deporte Atleta::especialidad() const {
-    return "Tenis";
+    int i = 1;
+    string res = _deportes<0>;
+    while (i =< _deportes) {
+        if (capacidad(_deportes<i>) > capacidad(_deportes<i-1>){
+            res = _deportes<i>;
+        }
+        i++;
+    }
+    return res;
 }
 
 void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
-     int i = 0;
-    pair <Deporte, Int> D;
-    while (i < D) {
+    int i = 0;
+    pair <Deporte, Int> d;
+    while (i < d) {
         if (D.first = d) {
             D.second = c;
         }
