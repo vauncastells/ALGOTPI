@@ -53,7 +53,7 @@ void Atleta::entrenarNuevoDeporte(const Deporte &d, const int &c) {
         }
         i++;
     }
-    retunrn _capacidad = c;
+    return _capacidad = c;
 }
 
 
