@@ -2,14 +2,15 @@
 
 
 Atleta::Atleta(const string &n, const Genero &g, const int &a, const Pais &p, const int &c) {
-    n = _nombre;
-    g = _genero;
-    a = _anioNacimineto;
-    p = _nacionalidad;
-    c = _ciaNumber;
-    vector<Deporte> d;
-    d = ["tenis"]; la lista que contiene al deporte tenis, falta implementar
-    d._capacidad = 50; no se como decir que es de tenis :/
+    _nombre = n;
+    _genero = g; 
+    _anioNacimineto = a;
+    _nacionalidad = p;
+    _ciaNumber = c;
+    vector<Pair<string, Int>> d;
+    Pair<"Tenis", 50> d1;
+    d.push_back(d1);
+    _deportes = d;
 }
 
 string Atleta::nombre() const {
